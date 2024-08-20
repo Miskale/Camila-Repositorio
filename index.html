@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>AnunciosGead</title>
+</head>
+<body>
+<section>
+    <div class="circle"></div>
+    <header>
+        <a href="#"><img src="/img/sena.png" class="logo"></a>
+        <a href="#"><img src="/img/LogoGead.png" class="logo"></a>
+        <ul>
+            <li><a href="">Inicio</a></li>
+            <li><a href="">Nosotros</a></li>
+            <li><a href="">Contactos</a></li>
+            <li><a href="">Ingresar</a></li>
+        </ul>
+    </header>
+    <div class="content">
+
+        <div class="textBox">
+            
+            <h2>Impulsando tu Educación. <br><span>GEAD</span></h2>
+            <p>Comparte y mejora tu aprendizaje: Sube tus trabajos y tareas para recibir retroalimentación, colaborar con otros y alcanzar tus metas educativas.</p>
+            <a href="#">Ingresar</a>
+        </div>
+        <div class="imgBox">
+            <img src="/img/vaso4.png" class="starbucks">
+        </div>
+    </div>
+    <ul class="thumb">
+        <li><img src="/img/vaso2.png" onclick="imgSlider('/img/vaso2.png');chageCircleColor('#3fad8e')"></li>
+        <li><img src="/img/vaso3.png" onclick="imgSlider('/img/vaso3.png');chageCircleColor('#3fad8e')"></li>
+        <li><img src="/img/vaso4.png" onclick="imgSlider('/img/vaso4.png');chageCircleColor('#3fad8e')"></li>
+    </ul>
+    <ul class="sci">
+        <li><a href=""><img src="/img/facebook.png" alt=""></a></li>
+        <li><a href=""><img src="/img/logotipo-de-instagram.png" alt=""></a></li>
+        <li><a href=""><img src="/img/gorjeo.png" alt=""></a></li>
+    </ul>
+</section>
+    <script type="text/javascript">
+        function imgSlider(anything){
+            document.querySelector('.starbucks').src = anything;
+        }
+
+        function chageCircleColor(color){
+            const circle = document.querySelector('.circle');
+            circle.style.background = color;
+        }
+
+    </script>
+
+</body>
+</html>
